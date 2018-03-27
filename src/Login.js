@@ -21,6 +21,9 @@ export default class Login extends Component {
         [event.target.id]: event.target.value
       });
     }
+
+    // let new = localStorage.getItem("email");
+
     render() {
       return (
         <div className="Login">

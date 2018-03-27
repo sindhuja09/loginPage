@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import registerServiceWorker from "./registerServiceWorker";
 import Main from "./Main";
 import Dashboard from "./dashboard";
 import "./index.css";
