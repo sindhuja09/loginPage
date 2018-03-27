@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {FormErrors} from './formerror';
-// import ReactDOM from 'react-dom';
 import Main from "./Main";
 
 class Signin extends Component{
@@ -28,9 +27,9 @@ class Signin extends Component{
             this.props.history.push("./dashboard")
         }else{
             console.log('input didnt match')
+            document.write('User does not exists');
         }
         
-
       }
       handleUserInput = (e) => {
         const name = e.target.name;
