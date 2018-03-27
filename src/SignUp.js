@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FormErrors} from './formerror';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 class SignUP extends Component{
     constructor (props) {
@@ -22,7 +22,7 @@ class SignUP extends Component{
       createUser(event) {
         event.preventDefault();
         console.log(this.refs.firstName.value);
-        localStorage.setItem('firstName', (this.refs.firstName).value)
+       localStorage.setItem('firstName', (this.refs.firstName).value)
         console.log(this.refs.lastName.value);
         localStorage.setItem('lastName', (this.refs.lastName).value)
         console.log(this.refs.email.value);
