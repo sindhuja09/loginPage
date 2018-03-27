@@ -22,8 +22,11 @@ export default class Login extends Component {
       });
     }
 
+    let email
 
-
+    if (localStorage.getItem('email')) {
+       console.log('this.email.value')
+    } 
     render() {
       return (
         <div className="Login">
