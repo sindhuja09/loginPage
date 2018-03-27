@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {FormErrors} from './formerror';
 // import ReactDOM from 'react-dom';
+import Main from "./Main";
 
 class Signin extends Component{
     constructor (props) {
@@ -22,6 +23,12 @@ class Signin extends Component{
         // localStorage.setItem('password', (this.refs.password).value)
         let email = localStorage.getItem('email');
         console.log(email);
+        if (this.refs.email.value == email) {
+            console.log('input matches');
+            this.props.history.push("./dashboard")
+        }else{
+            console.log('input didnt match')
+        }
         
 
       }
@@ -67,6 +74,7 @@ class Signin extends Component{
     render(){
         return(
          <React.Fragment>
+             <Main/>
             <div className="container">
               <div className="row">
                <div className="col-md-6 col-md-offset-3">

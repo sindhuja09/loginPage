@@ -8,8 +8,7 @@ import {
 // import Stuff from "./Stuff";
 // import Contact from "./Contact";
 // import Login from "./Login";
-import Signin from "./signin";
-import SignUp from "./SignUp";
+
 import Dashboard from "./dashboard";
 // import FormErrors from "./formerror";
  
@@ -22,18 +21,16 @@ class Main extends Component {
           {/* <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li> */}
-            <li><NavLink to="/signin">Signin</NavLink></li>
+            <li><NavLink to="/">Signin</NavLink></li>
             <li><NavLink to="/signup">SignUp</NavLink></li>
           </ul>
-          <div className="content">
+          
           {/* <Route exact path="/" component={Home}/>
           <Route path="/stuff" component={Stuff}/>
           <Route path="/contact" component={Contact}/> */}
-          <Route path="/signin" component={Signin}/>
-          <Route path="/SignUp" component={SignUp}/>
-          <Route path="/dashboard" component={Dashboard} />
+        
           </div>
-        </div>
+      
       </HashRouter>
     );
   }

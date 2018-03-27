@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {FormErrors} from './formerror';
 // import ReactDOM from 'react-dom';
+import Main from "./Main";
 
 class SignUP extends Component{
     constructor (props) {
@@ -83,6 +84,8 @@ class SignUP extends Component{
     render(){
         return(
          <React.Fragment>
+           
+           <Main/>
             <div className="container">
               <div className="row">
                <div className="col-md-6 col-md-offset-3">
