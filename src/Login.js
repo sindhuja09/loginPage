@@ -22,7 +22,7 @@ export default class Login extends Component {
       });
     }
 
-    // let new = localStorage.getItem("email");
+
 
     render() {
       return (
